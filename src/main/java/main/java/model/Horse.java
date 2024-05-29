@@ -6,14 +6,10 @@ import main.java.service.ThreadEnhancerService;
 import main.java.service.UtilHelper;
 import org.apache.commons.lang3.RandomStringUtils;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 
 public class Horse implements Runnable{
 
     private Config config = new Config();
-    private static final Logger logger = LoggerFactory.getLogger(Horse.class);
 
     private Integer minSpeed = config.getMinSpeedHorse();
     private Integer maxSpeed = config.getMaxSpeedHorse();
@@ -125,7 +121,7 @@ public class Horse implements Runnable{
     }
 
     private void setNombre(){
-        name = RandomStringUtils.randomAlphabetic(6);
+        name = UtilHelper.randomAlphabetic(6);
     }
 
     private void setVelocidad(){

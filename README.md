@@ -37,3 +37,8 @@ Finalizada la carrera se terminan TODAS las threads y se informan los resultados
     * Por estar en una zona potenciada
   * Ingreso en zona potenciada
   * Espera a que se libere una zona potenciada
+
+
+### Instalación
+* mvn clean install
+* java -jar .\target\java-virtual-horse-thread-1.0-SNAPSHOT.jar
